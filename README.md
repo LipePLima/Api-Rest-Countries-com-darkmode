@@ -3,7 +3,7 @@
 1° dia:
     - [x] Criar layout destktop;
     - [x] Estilizar tema darkmode;
-    - [ ] Conseguir exibir a lista de continentes ao clicar no botão de filtragem;
+    - [x] Conseguir exibir a lista de continentes ao clicar no botão de filtragem;
 2° dia:
     - [ ] Criar funcionalidade com Javscript para o botão darkmode;
     - [ ] Conseguir alternar o tema do site entre light e dark;

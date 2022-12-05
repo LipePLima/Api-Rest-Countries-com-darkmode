@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap');
+
+:root {
+    --dark-blue: hsl(209, 23%, 22%); /* Dark-Mode-Elements */
+    --very-dark-blue: hsl(207, 26%, 17%); /* Dark-Mode-Background */
+    --very-dark-blue: hsl(200, 15%, 8%); /* Light-Mode-Text */
+    --dark-gray: hsl(0, 0%, 52%); /* Light-Mode-Input */
+    --very-light-gray: hsl(0, 0%, 98%); /* Light-Mode-Background */
+    --white: hsl(0, 0%, 100%); /* Dark-Mode-Text-&-Light-Mode-Elements */
+}
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+    padding: 0 4rem;
+    border-bottom: 3px solid rgba(117, 117, 117, 0.1);
+}
+
+.title {
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.dkMode {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 7rem;
+    background-color: transparent;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    transition: 1s;
+}
+
+main {
+    padding: 3rem 4rem;
+    height: 100vh;
+    background-color: var(--very-light-gray);
+}
+
+.conteiner__search {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content__search {
+    display: flex;
+    align-items: center;
+    color: #c0c0c0;
+}
+
+.search {
+    font-family: 'Nunito Sans', sans-serif;
+    width: 30rem;
+    height: 3.5rem;
+    padding-left: 4.625rem;
+    border: none;
+    border-radius: 5px;
+    box-shadow: -1px 4px 5px rgba(0, 0, 0, 0.1);
+
+}
+
+.icon-search {
+    position: absolute;
+    left: calc(74px + 40px/2);
+}
+
+/* Lista de continentes */
+
+.search-filter {
+    display: flex;
+    align-items: center;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 14px;
+    height: 3.5rem;
+    padding: 0 1.5rem;
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    box-shadow: -1px 1px 5px rgba(122, 122, 122, 0.1);
+    cursor: pointer;
+}
+
+.icon-arrow {
+    order: 1;
+    margin-left: .5rem;
+}
+
+.search-filter:hover .icon-arrow {
+    transition: .3s;
+    transform: rotate(-90deg);
+}
+
+.active {
+    transform: rotate(-90deg);
+}
+
+.region-list {
+    position: absolute; 
+    display: none;
+    width: 10.4rem;
+    background-color: #fff;
+    margin-top: .2rem;
+    padding: 1.2rem 1.4rem;
+    border-radius: 5px;
+    box-shadow: -1px 1px 5px rgba(122, 122, 122, 0.1);
+}
+
+.list-active {
+    display: block;
+}
+
+.region {
+    width: 10rem;
+    margin-bottom: .8rem;
+    cursor: pointer;
+}
+
+.region:hover {
+    font-weight: 600;
+}
+

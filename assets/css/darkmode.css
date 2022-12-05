@@ -1,0 +1,43 @@
+:root {
+    --dark-blue: hsl(209, 23%, 22%); /* Dark-Mode-Elements */
+    --very-dark-blue: hsl(207, 26%, 17%); /* Dark-Mode-Background */
+    --very-dark-blue2: hsl(200, 15%, 8%); /* Light-Mode-Text */
+    --dark-gray: hsl(0, 0%, 52%); /* Light-Mode-Input */
+    --very-light-gray: hsl(0, 0%, 98%); /* Light-Mode-Background */
+    --white: hsl(0, 0%, 100%); /* Dark-Mode-Text-&-Light-Mode-Elements */
+}
+
+header {
+    background-color: var(--dark-blue);
+}
+
+.title {
+    color: var(--white);
+}
+
+.dkMode {
+    color: var(--white);
+}
+
+main {
+    background-color: var(--very-dark-blue);
+}
+
+.search {
+    background-color: var(--dark-blue);
+}
+
+.content__search, .search::placeholder {
+    color: var(--white);
+}
+
+.search-filter, .search-filter::placeholder {
+    background-color: var(--dark-blue);
+    color: var(--white);
+}
+
+.region-list {
+    display: block;
+    background-color: var(--dark-blue);
+    color: var(--white);
+}

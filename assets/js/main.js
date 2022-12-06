@@ -19,8 +19,8 @@ dark.addEventListener('change', e => {
         icon.textContent = 'dark_mode'
     }
 
-    list.forEach( (e) => {
-        e.classList.toggle('dark')
+    list.forEach( element => {
+        element.classList.toggle('dark')
     })
 })
 

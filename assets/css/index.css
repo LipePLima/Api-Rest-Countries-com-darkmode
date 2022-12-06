@@ -78,7 +78,7 @@ main {
 .content__search {
     display: flex;
     align-items: center;
-    color: #c0c0c0;
+    color: var(--dark-gray);
     transition: color .5s linear;
 }
 
@@ -91,6 +91,10 @@ main {
     border-radius: 5px;
     box-shadow: -1px 4px 5px rgba(0, 0, 0, 0.1);
     transition: background .5s linear;
+}
+
+.search::placeholder {
+    color: var(--dark-gray);
 }
 
 .icon-search {
@@ -121,7 +125,7 @@ main {
 }
 
 .search-filter:hover .icon-arrow {
-    transition: .3s;
+    transition: .5s;
     transform: rotate(-90deg);
 }
 
@@ -155,6 +159,25 @@ main {
     font-weight: 600;
 }
 
+/* BOTÃO PAÍS */
+
+.div-country {
+    display: flex;
+    flex-direction: column;
+    width: 264px;
+    height: 336px;
+    margin-top: 48px;
+    padding: 0;
+    background-color: var(--white);
+    border: none;
+    border-radius: 5px;
+}
+
+.img-country {
+    width: 100%;
+    height: 161px;
+}
+
 /* DARK MODE */
 
 header.dark {
@@ -177,7 +200,7 @@ main.dark {
     background-color: var(--dark-blue);
 }
 
-.content__search.dark, .search::placeholder {
+.content__search.dark, .search.dark::placeholder {
     color: var(--white);
 }
 

@@ -5,8 +5,8 @@
     - [x] Estilizar tema darkmode;
     - [x] Conseguir exibir a lista de continentes ao clicar no botão de filtragem;
 2° dia:
-    - [ ] Criar funcionalidade com Javscript para o botão darkmode;
-    - [ ] Conseguir alternar o tema do site entre light e dark;
+    - [x] Criar funcionalidade com Javscript para o botão darkmode;
+    - [x] Conseguir alternar o tema do site entre light e dark;
 3° dia:
     - [ ] Manipular a API Rest Countries;
     - [ ] Estilizar div dos países;

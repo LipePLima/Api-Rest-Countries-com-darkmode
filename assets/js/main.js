@@ -1,15 +1,32 @@
-// const dark = document.querySelector('#dkMode');
-// const link = document.querySelector('#linkDarkMode');
+// Dark Mode
+const dark = document.querySelector('#btn');
+const list = [
+    document.querySelector('header'), 
+    document.querySelector('.title'), 
+    document.querySelector('.dkMode'), 
+    document.querySelector('main'), 
+    document.querySelector('.search'), 
+    document.querySelector('.content__search'), 
+    document.querySelector('.search-filter'), 
+    document.querySelector('.region-list')
+]
 
-// if (link.href = '') {
-//     dark.addEventListener('click', () => {
-//         link.href = 'assets/css/darkmode.css'
-        
-//         const icon = document.querySelector('#icon-dark');
-//         icon.textContent = 'light_mode';
-//     })
-// }
+dark.addEventListener('change', e => {
+    const icon = document.querySelector('#icon-dark');
+    if (e.target.checked) {
+        icon.textContent = 'light_mode';
+    } else {
+        icon.textContent = 'dark_mode'
+    }
 
+    list.forEach( (e) => {
+        e.classList.toggle('dark')
+    })
+})
+
+
+
+// Filtro de busca
 const filter = document.querySelector('#filter');
 
 filter.addEventListener('click', () => {

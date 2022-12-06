@@ -21,11 +21,13 @@ header {
     height: 5rem;
     padding: 0 4rem;
     border-bottom: 3px solid rgba(117, 117, 117, 0.1);
+    transition: background .5s linear;
 }
 
 .title {
     font-size: 24px;
     font-weight: 800;
+    transition: color .5s linear;
 }
 
 .dkMode {
@@ -36,7 +38,20 @@ header {
     background-color: transparent;
     font-size: 14px;
     font-weight: 600;
-    border: none;
+    transition: color .5s linear;
+}
+
+#btn {
+    visibility: hidden;
+    width: 5px;
+}
+
+label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 95px;
     cursor: pointer;
 }
 
@@ -46,13 +61,13 @@ header {
     align-items: center;
     width: 20px;
     height: 20px;
-    transition: 1s;
 }
 
 main {
     padding: 3rem 4rem;
     height: 100vh;
     background-color: var(--very-light-gray);
+    transition: background .5s linear;
 }
 
 .conteiner__search {
@@ -64,6 +79,7 @@ main {
     display: flex;
     align-items: center;
     color: #c0c0c0;
+    transition: color .5s linear;
 }
 
 .search {
@@ -74,7 +90,7 @@ main {
     border: none;
     border-radius: 5px;
     box-shadow: -1px 4px 5px rgba(0, 0, 0, 0.1);
-
+    transition: background .5s linear;
 }
 
 .icon-search {
@@ -91,10 +107,11 @@ main {
     font-size: 14px;
     height: 3.5rem;
     padding: 0 1.5rem;
-    background-color: #fff;
+    background-color: var(--white);
     border: none;
     border-radius: 5px;
     box-shadow: -1px 1px 5px rgba(122, 122, 122, 0.1);
+    transition: background .5s linear, color .5s linear;
     cursor: pointer;
 }
 
@@ -121,6 +138,7 @@ main {
     padding: 1.2rem 1.4rem;
     border-radius: 5px;
     box-shadow: -1px 1px 5px rgba(122, 122, 122, 0.1);
+    transition: background .5s linear, color .5s linear;
 }
 
 .list-active {
@@ -135,5 +153,41 @@ main {
 
 .region:hover {
     font-weight: 600;
+}
+
+/* DARK MODE */
+
+header.dark {
+    background-color: var(--dark-blue);
+}
+
+.title.dark {
+    color: var(--white);
+}
+
+.dkMode.dark {
+    color: var(--white);
+}
+
+main.dark {
+    background-color: var(--very-dark-blue);
+}
+
+.search.dark {
+    background-color: var(--dark-blue);
+}
+
+.content__search.dark, .search::placeholder {
+    color: var(--white);
+}
+
+.search-filter.dark {
+    background-color: var(--dark-blue);
+    color: var(--white);
+}
+
+.region-list.dark {
+    background-color: var(--dark-blue);
+    color: var(--white);
 }
 

@@ -1,5 +1,9 @@
 // Dark Mode
 const dark = document.querySelector('#btn');
+const div  = document.querySelectorAll('.country-div')
+const data = document.querySelectorAll('.data');
+
+
 const list = [
     document.querySelector('header'), 
     document.querySelector('.title'), 
@@ -9,7 +13,6 @@ const list = [
     document.querySelector('.content__search'), 
     document.querySelector('.search-filter'), 
     document.querySelector('.region-list'),
-    document.querySelector('.country-div')
 ]
 
 dark.addEventListener('change', e => {
@@ -23,9 +26,9 @@ dark.addEventListener('change', e => {
         label.textContent = 'Light Mode';
     }
 
-    list.forEach( element => {
-        element.classList.toggle('dark')
-    })
+    list.forEach( element => element.classList.toggle('dark'));
+    div.forEach( e => e.classList.toggle('dark'));
+    data.forEach( e => e.classList.toggle('dark'));
 })
 
 

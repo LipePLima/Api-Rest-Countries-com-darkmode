@@ -15,3 +15,21 @@ function countryData (data) {
     region.textContent = data[0].continents
     capital.textContent = data[0].capital
 }
+
+function CreateDiv () {
+    const container = document.querySelector('#container__countries');
+    const button    = document.createElement('button');
+    const imgCreate = document.createElement('img');
+    const divCreate = document.createElement('div');
+    const h1Create  = document.createElement('h1');
+    const listElements = [document.createElement('h2'), document.createElement('h3'), document.createElement('h4')];
+
+    container.appendChild(button);
+    button.appendChild(imgCreate, divCreate);
+    divCreate.appendChild(h1Create, listElements[0], listElements[1], listElements[2]);
+    
+    listElements.forEach( e => {
+        const b = document.createElement('b');
+        b.textContent = 
+    })    
+}

@@ -1,30 +1,28 @@
 fetch(`https://restcountries.com/v3.1/all`).then( data => data.json() ).then( countries => countryData(countries) )
 
 function countryData (data) {
-    const img        = document.querySelector('#img');
-    const name       = document.querySelector('#name');
-    const population = document.querySelector('#population');
-    const region     = document.querySelector('#region');
-    const capital    = document.querySelector('#capital');
+    for (let i = 0; i < data.length; i++) {
+        const container = document.querySelector('#container__countries');
+        container.innerHTML += '<button class="country-div"><img src="" class="country-img" id="img"><div class="informations"><h1 class="country-data country-name" id="name">País</h1><h2 class="country-data"><b>População:</b><p class="data" id="population"></p></h2><h3 class="country-data"><b>Continente:</b><p class="data" id="region"></p></h3><h4 class="country-data last"><b>Capital:</b><p class="data" id="capital"></p></h4></div></button>'
+    }
 
-    console.log(data[0]);
+    const img        = document.querySelectorAll('#img');
+    const name       = document.querySelectorAll('#name');
+    const population = document.querySelectorAll('#population');
+    const region     = document.querySelectorAll('#region');
+    const capital    = document.querySelectorAll('#capital');
 
-    img.src = data[0].flags.png
-    name.textContent = data [0].translations.por.official
-    population.textContent = data[0].population
-    region.textContent = data[0].continents
-    capital.textContent = data[0].capital
+    console.log(data);
+
+    for (let i = 0; i < data.length; i++) {
+        img[i].src = data[i].flags.png;
+        name[i].textContent = data[i].translations.por.official;
+        population[i].textContent = data[i].population;
+        region[i].textContent = data[i].continents;
+        capital[i].textContent = data[i].capital;
+    }
 }
 
-function CreateDiv () {
-    const container = document.querySelector('#container__countries');
-    const button    = document.createElement('button');
-    const imgCreate = document.createElement('img');
-    const divCreate = document.createElement('div');
-    const h1Create  = document.createElement('h1');
-    const listElements = [document.createElement('h2'), document.createElement('h3'), document.createElement('h4')];
+    
 
-    container.appendChild(button);
-    button.appendChild(imgCreate, divCreate);
-    divCreate.appendChild(h1Create, listElements[0], listElements[1], listElements[2]);
-}
+

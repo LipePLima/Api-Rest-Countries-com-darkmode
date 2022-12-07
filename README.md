@@ -11,7 +11,7 @@
     - [x] Manipular a API Rest Countries;
     - [x] Estilizar div dos país;
     - [x] Exibir país dentro de uma div com: Bandeira, nome, população, continente, capital;
-    - [ ] Adicionar divs conformes a quantidade de países no mundo;
+    - [x] Adicionar divs conformes a quantidade de países no mundo;
 4° dia - Filtrando países:
     - [ ] Filtro de pesquisa de países funcional;
     - [ ] Filtro de pesquisa de continentes funcional;

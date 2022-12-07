@@ -22,7 +22,7 @@
         <h1 class="title">Países do Mundo</h1>
         <div class="dkMode" id="dkMode">
             <input type="checkbox" id="btn">
-            <label for="btn"><span class="material-symbols-outlined icon" id="icon-dark">dark_mode</span>Dark Mode</label>
+            <label for="btn" ><span class="material-symbols-outlined icon" id="icon-dark">light_mode</span><p id="label">Light Mode</p></label>
         </div>
     </header>
     <main>
@@ -45,17 +45,27 @@
             </div>
         </div>
         <section class="container__countries">
-            <button class="div-country">
-                <img src="" alt="" class="img-country">
-                <div>
-                    <h1>País</h1>
-                    <p class="date-country">População</p>
-                    <p class="date-country">Região</p>
-                    <p class="date-country">Capital</p>  
+            <button class="country-div">
+                <img src="" class="country-img" id="img">
+                <div class="informations">
+                    <h1 class="country-data country-name" id="name">País</h1>
+                    <h2 class="country-data">
+                        <b>População:</b>
+                        <p id="population"></p>
+                    </h2>
+                    <h3 class="country-data">
+                        <b>Continente:</b>
+                        <p id="region"></p>
+                    </h3>
+                    <h4 class="country-data last">
+                        <b>Capital:</b>
+                        <p id="capital"></p>
+                    </h4>  
                 </div>
             </button>
         </section>
     </main>
-    <script src="assets/js/main.js"></script>
+    <script src="assets/js/darkmode.js"></script>
+    <script src="assets/js/api.js"></script>
 </body>
 </html>

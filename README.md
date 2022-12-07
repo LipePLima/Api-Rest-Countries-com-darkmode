@@ -8,9 +8,10 @@
     - [x] Criar funcionalidade com Javscript para o botão darkmode;
     - [x] Conseguir alternar o tema do site entre light e dark;
 3° dia:
-    - [ ] Manipular a API Rest Countries;
-    - [ ] Estilizar div dos países;
-    - [ ] Exibir paises dentro de uma div com: Bandeira, nome, população, continente, capital;
+    - [x] Manipular a API Rest Countries;
+    - [x] Estilizar div dos país;
+    - [x] Exibir país dentro de uma div com: Bandeira, nome, população, continente, capital;
+    - [ ] Adicionar divs conformes a quantidade de países no mundo;
 4° dia:
     - [ ] Versão mobile da página principal;
     - [ ] Criar página com 

@@ -5,7 +5,7 @@
     --very-dark-blue: hsl(207, 26%, 17%); /* Dark-Mode-Background */
     --very-dark-blue: hsl(200, 15%, 8%); /* Light-Mode-Text */
     --dark-gray: hsl(0, 0%, 52%); /* Light-Mode-Input */
-    --very-light-gray: hsl(0, 0%, 98%); /* Light-Mode-Background */
+    --very-light-gray: hsl(0, 0%, 90%); /* Light-Mode-Background */
     --white: hsl(0, 0%, 100%); /* Dark-Mode-Text-&-Light-Mode-Elements */
 }
 
@@ -86,7 +86,7 @@ main {
     font-family: 'Nunito Sans', sans-serif;
     width: 30rem;
     height: 3.5rem;
-    padding-left: 4.625rem;
+    padding: 0 1rem 0 4.625rem;
     border: none;
     border-radius: 5px;
     box-shadow: -1px 4px 5px rgba(0, 0, 0, 0.1);
@@ -94,6 +94,7 @@ main {
 }
 
 .search::placeholder {
+    font-family: 'Nunito Sans', sans-serif;
     color: var(--dark-gray);
 }
 
@@ -161,21 +162,49 @@ main {
 
 /* BOTÃO PAÍS */
 
-.div-country {
+.country-div {
     display: flex;
     flex-direction: column;
     width: 264px;
-    height: 336px;
     margin-top: 48px;
     padding: 0;
     background-color: var(--white);
     border: none;
     border-radius: 5px;
+    cursor: pointer;
 }
 
-.img-country {
+.country-img {
     width: 100%;
     height: 161px;
+    border-radius: 5px 5px 0 0;
+}
+
+.informations {
+    font-family: 'Nunito Sans', sans-serif;
+    margin-top: 2rem;
+    padding-left: 1.5rem;
+    text-align: left;
+}
+
+.country-data {
+    display: flex;
+    margin-bottom: .5rem;
+}
+
+.country-data b {
+    font-weight: 600;
+    margin-right: .2rem;
+} 
+
+.country-name {
+    font-size: 18px;
+    font-weight: 800;
+    margin-bottom: 1.4rem;
+}
+
+.last {
+    margin-bottom: 1rem;
 }
 
 /* DARK MODE */
@@ -198,6 +227,7 @@ main.dark {
 
 .search.dark {
     background-color: var(--dark-blue);
+    color: var(--white)
 }
 
 .content__search.dark, .search.dark::placeholder {
@@ -210,6 +240,11 @@ main.dark {
 }
 
 .region-list.dark {
+    background-color: var(--dark-blue);
+    color: var(--white);
+}
+
+.country-div.dark {
     background-color: var(--dark-blue);
     color: var(--white);
 }

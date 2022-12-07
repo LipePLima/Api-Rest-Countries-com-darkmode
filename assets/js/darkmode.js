@@ -8,15 +8,19 @@ const list = [
     document.querySelector('.search'), 
     document.querySelector('.content__search'), 
     document.querySelector('.search-filter'), 
-    document.querySelector('.region-list')
+    document.querySelector('.region-list'),
+    document.querySelector('.country-div')
 ]
 
 dark.addEventListener('change', e => {
-    const icon = document.querySelector('#icon-dark');
+    const icon  = document.querySelector('#icon-dark');
+    const label = document.querySelector('#label')
     if (e.target.checked) {
-        icon.textContent = 'light_mode';
-    } else {
         icon.textContent = 'dark_mode'
+        label.textContent = 'Dark Mode';
+    } else {
+        icon.textContent = 'light_mode';
+        label.textContent = 'Light Mode';
     }
 
     list.forEach( element => {

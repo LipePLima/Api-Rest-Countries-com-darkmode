@@ -27,9 +27,4 @@ function CreateDiv () {
     container.appendChild(button);
     button.appendChild(imgCreate, divCreate);
     divCreate.appendChild(h1Create, listElements[0], listElements[1], listElements[2]);
-    
-    listElements.forEach( e => {
-        const b = document.createElement('b');
-        b.textContent = 
-    })    
 }

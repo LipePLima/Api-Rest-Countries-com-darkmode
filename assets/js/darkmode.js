@@ -3,8 +3,6 @@ function darkMode() {
     const dark = document.querySelector('#btn');
     const div  = document.querySelectorAll('.country-div')
     const data = document.querySelectorAll('.data');
-    console.log(div)
-
     const list = [
         document.querySelector('header'), 
         document.querySelector('.title'), 
@@ -32,17 +30,3 @@ function darkMode() {
         data.forEach( e => e.classList.toggle('dark'));
     })
 }
-
-
-
-
-// Filtro de busca
-const filter = document.querySelector('#filter');
-
-filter.addEventListener('click', () => {
-    const arrow = document.querySelector('#arrow');
-    arrow.classList.toggle('active');
-
-    const list = document.querySelector('#list');
-    list.classList.toggle('list-active')
-})

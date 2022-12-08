@@ -141,7 +141,7 @@ main {
     margin-top: .2rem;
     padding: 1.2rem 1.4rem;
     border-radius: 5px;
-    box-shadow: -1px 1px 5px rgba(122, 122, 122, 0.1);
+    box-shadow: 2px 2px 5px rgba(122, 122, 122, 0.3);
     transition: background .5s linear, color .5s linear;
 }
 
@@ -266,3 +266,8 @@ main.dark {
     color: var(--white);
 }
 
+/* Filtro */
+
+.desactive {
+    display: none;
+}

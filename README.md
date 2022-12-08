@@ -12,6 +12,7 @@
     - [x] Estilizar div dos país;
     - [x] Exibir país dentro de uma div com: Bandeira, nome, população, continente, capital;
     - [x] Adicionar divs conformes a quantidade de países no mundo;
+    - [x] Darkmode funcionando em cada botão de país;
 4° dia - Filtrando países:
     - [ ] Filtro de pesquisa de países funcional;
     - [ ] Filtro de pesquisa de continentes funcional;

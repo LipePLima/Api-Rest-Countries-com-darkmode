@@ -1,35 +1,38 @@
 // Dark Mode
-const dark = document.querySelector('#btn');
-const div  = document.querySelectorAll('.country-div')
-const data = document.querySelectorAll('.data');
+function darkMode() {
+    const dark = document.querySelector('#btn');
+    const div  = document.querySelectorAll('.country-div')
+    const data = document.querySelectorAll('.data');
+    console.log(div)
 
+    const list = [
+        document.querySelector('header'), 
+        document.querySelector('.title'), 
+        document.querySelector('.dkMode'), 
+        document.querySelector('main'), 
+        document.querySelector('.search'), 
+        document.querySelector('.content__search'), 
+        document.querySelector('.search-filter'), 
+        document.querySelector('.region-list'),
+    ]
 
-const list = [
-    document.querySelector('header'), 
-    document.querySelector('.title'), 
-    document.querySelector('.dkMode'), 
-    document.querySelector('main'), 
-    document.querySelector('.search'), 
-    document.querySelector('.content__search'), 
-    document.querySelector('.search-filter'), 
-    document.querySelector('.region-list'),
-]
+    dark.addEventListener('change', e => {
+        const icon  = document.querySelector('#icon-dark');
+        const label = document.querySelector('#label')
+        if (e.target.checked) {
+            icon.textContent = 'dark_mode'
+            label.textContent = 'Dark Mode';
+        } else {
+            icon.textContent = 'light_mode';
+            label.textContent = 'Light Mode';
+        }
 
-dark.addEventListener('change', e => {
-    const icon  = document.querySelector('#icon-dark');
-    const label = document.querySelector('#label')
-    if (e.target.checked) {
-        icon.textContent = 'dark_mode'
-        label.textContent = 'Dark Mode';
-    } else {
-        icon.textContent = 'light_mode';
-        label.textContent = 'Light Mode';
-    }
+        list.forEach( element => element.classList.toggle('dark'));
+        div.forEach( e => e.classList.toggle('dark'));
+        data.forEach( e => e.classList.toggle('dark'));
+    })
+}
 
-    list.forEach( element => element.classList.toggle('dark'));
-    div.forEach( e => e.classList.toggle('dark'));
-    data.forEach( e => e.classList.toggle('dark'));
-})
 
 
 

@@ -12,7 +12,7 @@ filter.addEventListener('click', () => {
 // Filtro Lista 
 const item = document.querySelectorAll('.region');
 item.forEach( e => e.addEventListener('click', () => {
-    const div   = document.querySelectorAll('.informations');
+    const div = document.querySelectorAll('.informations');
 
     div.forEach( element => { 
         if (!element.childNodes[2].textContent.includes(e.textContent)) {
@@ -24,4 +24,20 @@ item.forEach( e => e.addEventListener('click', () => {
         }
     })
 }))
+
+// Filtro Input
+const input = document.querySelector('#search')
+input.addEventListener('input', event => {
+    const inputValue = event.target.value.trim()
+
+    const div = document.querySelectorAll('.informations');
+
+    div.forEach( element => { 
+        if (!element.childNodes[0].textContent.includes(inputValue)) {
+            element.parentNode.classList.add('desactive')
+        } else {
+            element.parentNode.classList.remove('desactive')
+        }
+    })
+})
 

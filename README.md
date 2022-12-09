@@ -15,7 +15,7 @@
     - [x] Darkmode funcionando em cada botão de país;
 4° dia - Filtrando países:
     - [ ] Filtro de pesquisa de países funcional;
-    - [ ] Filtro de pesquisa de continentes funcional;
+    - [x] Filtro de pesquisa de continentes funcional;
 5° dia - Segunda Página de mais informações;
     - [ ] Alterar página de acordo com o país clicado;
     - [ ]

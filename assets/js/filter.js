@@ -12,13 +12,16 @@ filter.addEventListener('click', () => {
 // Filtro Lista 
 const item = document.querySelectorAll('.region');
 item.forEach( e => e.addEventListener('click', () => {
-    const btn    = document.querySelectorAll('country-div');
-    const region = document.querySelectorAll('#region');
-    region.forEach( element => {
-        if (element.textContent != e.textContent ) {
-            console.log(btn)
-        } 
+    const div   = document.querySelectorAll('.informations');
+
+    div.forEach( element => { 
+        if (!element.childNodes[2].textContent.includes(e.textContent)) {
+            element.parentNode.classList.add('desactive')
+        } else {
+            element.parentNode.classList.remove('desactive')
+        } if (e.textContent == 'Todos') {
+            element.parentNode.classList.remove('desactive')
+        }
     })
-    console.log(e.textContent)
 }))
 

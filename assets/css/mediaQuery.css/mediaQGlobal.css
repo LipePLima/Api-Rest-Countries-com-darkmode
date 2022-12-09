@@ -1,0 +1,29 @@
+@media screen and (max-width: 690px){
+    header {
+        padding: 0 1.25rem;
+    }
+    
+    .conteiner__search {
+        padding: 1.875rem 1.25rem;
+        flex-direction: column;
+        height: 10.563rem;
+    }
+
+    .content__search {
+        width: 100%;
+    }
+
+    .icon-search {
+        left: 45px;
+    } 
+
+    .container__countries {
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 1361px) {
+    .country-div {
+        margin: 3rem 5rem 0 0;
+    }
+}

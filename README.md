@@ -16,9 +16,9 @@
 4° dia - Filtrando países:
     - [x] Filtro de pesquisa de países funcional;
     - [x] Filtro de pesquisa de continentes funcional;
+    - [x] Responsividade da página principal;
 5° dia - Segunda Página de mais informações;
     - [ ] Alterar página de acordo com o país clicado;
     - [ ]
-    - [ ] Versão mobile da página principal;
     - [ ] Criar página com 
 

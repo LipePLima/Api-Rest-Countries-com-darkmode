@@ -1,0 +1,43 @@
+header.dark {
+    background-color: var(--dark-blue);
+}
+
+.title.dark {
+    color: var(--white);
+}
+
+.dkMode.dark {
+    color: var(--white);
+}
+
+main.dark {
+    background-color: var(--very-dark-blue);
+}
+
+.search.dark {
+    background-color: var(--dark-blue);
+    color: var(--white)
+}
+
+.content__search.dark, .search.dark::placeholder {
+    color: var(--white);
+}
+
+.search-filter.dark {
+    background-color: var(--dark-blue);
+    color: var(--white);
+}
+
+.region-list.dark {
+    background-color: var(--dark-blue);
+    color: var(--white);
+}
+
+.country-div.dark {
+    background-color: var(--dark-blue);
+    color: var(--white);
+}
+
+.data.dark {
+    color: var(--white);
+}

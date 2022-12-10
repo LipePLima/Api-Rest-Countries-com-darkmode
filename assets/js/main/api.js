@@ -4,8 +4,9 @@ function countryData (data) {
     for (let i = 0; i < data.length; i++) {
         const container = document.querySelector('#container__countries');
         container.innerHTML += '<button class="country-div"><img src="" class="country-img" id="img"><div class="informations"><h1 class="country-data country-name" id="name">País</h1><h2 class="country-data"><b>População:</b><p class="data" id="population"></p></h2><h3 class="country-data"><b>Continente:</b><p class="data" id="region"></p></h3><h4 class="country-data last"><b>Capital:</b><p class="data" id="capital"></p></h4></div></button>'
-    }
+    } 
 
+    const btn        = document.querySelectorAll('.country-div')
     const img        = document.querySelectorAll('#img');
     const name       = document.querySelectorAll('#name');
     const population = document.querySelectorAll('#population');
@@ -13,11 +14,11 @@ function countryData (data) {
     const capital    = document.querySelectorAll('#capital');
 
     for (let i = 0; i < data.length; i++) {
-        img[i].src = data[i].flags.png;
-        name[i].textContent = data[i].translations.por.common;
+        img[i].src                = data[i].flags.png;
+        name[i].textContent       = data[i].translations.por.common;
         population[i].textContent = data[i].population;
-        
-        region[i].textContent = data[i].continents;
+        region[i].textContent     = data[i].continents;
+
         if (data[i].continents == 'North America') {
             region[i].textContent = 'América do Norte';
         } else if (data[i].continents == 'South America') {
@@ -32,6 +33,12 @@ function countryData (data) {
         capital[i].textContent = data[i].capital;
     }
 
+    buttonCountry(btn)
     darkMode()
 }
 
+function buttonCountry (btn) {
+    btn.forEach( btn => btn.addEventListener('click', () => {
+        window.location.href = 'assets/pages/moreDetail.html'
+    }))
+}

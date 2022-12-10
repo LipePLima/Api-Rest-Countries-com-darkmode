@@ -11,7 +11,7 @@ function darkMode() {
         document.querySelector('.search'), 
         document.querySelector('.content__search'), 
         document.querySelector('.search-filter'), 
-        document.querySelector('.region-list'),
+        document.querySelector('.region-list')
     ]
     
     dark.addEventListener('change', e => {

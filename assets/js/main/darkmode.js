@@ -13,7 +13,7 @@ function darkMode() {
         document.querySelector('.search-filter'), 
         document.querySelector('.region-list'),
     ]
-
+    
     dark.addEventListener('change', e => {
         const icon  = document.querySelector('#icon-dark');
         const label = document.querySelector('#label')

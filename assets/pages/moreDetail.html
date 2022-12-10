@@ -11,33 +11,33 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
-    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/index.css">
-    <link rel="stylesheet" href="../css/darkmode.css">
+    <link rel="stylesheet" href="../css/mediaQuery/mediaQGlobal.css">
     <link rel="stylesheet" href="../css/moreDetail/moreDetail.css">
-    <link rel="stylesheet" href="../css/mediaQuery.css/mediaQGlobal.css">
+    <link rel="stylesheet" href="../css/darkmode.css">
 
     <title></title>
 </head>
 <body>
     <header>
         <h1 class="title">Países do Mundo</h1>
-        <div class="dkMode" id="dkMode">
-            <input type="checkbox" id="btn">
-            <label for="btn" ><span class="material-symbols-outlined icon" id="icon-dark">light_mode</span><p id="label">Light Mode</p></label>
+        <div class="dkMode" id="dkMode__moreDetails">
+            <input type="checkbox" id="btn-dkMode__moreDetails">
+            <label for="btn-dkMode__moreDetails"><span class="material-symbols-outlined icon" id="mdIcon-dark">light_mode</span><p id="mdLabel">Light Mode</p></label>
         </div>
     </header>
-    <main>
+    <main class="main__moreDetails">
         <div class="back">
-            <button class="btnBack"><a href=""><span class="material-symbols-outlined seta">arrow_back</span>Voltar</a></button>
+            <button class="btnBack"><a href="../../index.html"><span class="material-symbols-outlined seta">arrow_back</span>Voltar</a></button>
         </div>
         <div class="info">
             <div class="img">
                 <img src="" alt="">
             </div>
             <div class="moreDetails">
-                <h1 class="title">País</h1>
+                <h1 class="moreDetail-title">País</h1>
                 <div class="div__details">
                     <div class="div__details1">
                         <p class="details"><b>Nome Nativo:</b></p>
@@ -60,7 +60,7 @@
             </div>
         </div>
     </main>
-    <script src="../js/darkmode.js"></script>
+    <script src="../js/moreDetails/mdDarkmode.js"></script>
 </body>
 </html>
 

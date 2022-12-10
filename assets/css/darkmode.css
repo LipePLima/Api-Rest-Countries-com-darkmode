@@ -41,3 +41,29 @@ main.dark {
 .data.dark {
     color: var(--white);
 }
+
+/* PÁGINA MAIS INFORMAÇÕES */
+
+.main__moreDetails.dark {
+    background-color: var(--very-dark-blue);
+}
+
+.btnBack.dark {
+    background-color: var(--dark-blue);
+}
+
+.btnBack.dark a {
+    color: var(--white);
+}
+
+.info.dark {
+    color: var(--white);
+}
+
+.border-Countries.dark {
+    background-color: var(--dark-blue);
+}
+
+hr.dark {
+    background-color: var(--white);
+}

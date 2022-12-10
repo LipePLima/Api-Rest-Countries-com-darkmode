@@ -1,4 +1,4 @@
-fetch(`https://restcountries.com/v3.1/all`).then( data => data.json() ).then( countries => countryData(countries) )
+fetch(`https://restcountries.com/v3.1/all`).then( data => data.json() ).then( countries => countryData(countries))
 
 function countryData (data) {
     for (let i = 0; i < data.length; i++) {
@@ -18,7 +18,9 @@ function countryData (data) {
         name[i].textContent       = data[i].translations.por.common;
         population[i].textContent = data[i].population;
         region[i].textContent     = data[i].continents;
+        capital[i].textContent    = data[i].capital;
 
+        // TRADUÇÃO
         if (data[i].continents == 'North America') {
             region[i].textContent = 'América do Norte';
         } else if (data[i].continents == 'South America') {
@@ -30,15 +32,9 @@ function countryData (data) {
         } else if (data[i].continents == 'Europe') {
             region[i].textContent = 'Europa';
         }
-        capital[i].textContent = data[i].capital;
+        
     }
 
-    buttonCountry(btn)
+    selectBtn(btn, data)
     darkMode()
-}
-
-function buttonCountry (btn) {
-    btn.forEach( btn => btn.addEventListener('click', () => {
-        window.location.href = 'assets/pages/moreDetail.html'
-    }))
 }

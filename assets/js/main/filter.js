@@ -30,9 +30,9 @@ const input = document.querySelector('#search')
 input.addEventListener('input', event => {
     const inputValue = event.target.value.trim()
 
-    const divInput = document.querySelectorAll('.informations');
+    const divBtn = document.querySelectorAll('.informations');
 
-    divInput.forEach( element => { 
+    divBtn.forEach( element => { 
         if (!element.childNodes[0].textContent.includes(inputValue)) {
             element.parentNode.classList.add('desactive')
         } else {

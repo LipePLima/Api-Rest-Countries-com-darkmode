@@ -17,8 +17,7 @@
     - [x] Filtro de pesquisa de países funcional;
     - [x] Filtro de pesquisa de continentes funcional;
     - [x] Responsividade da página principal;
+    - [x] Fazer a página de Mais Informações; 
 5° dia - Segunda Página de mais informações;
     - [ ] Alterar página de acordo com o país clicado;
-    - [ ]
-    - [ ] Criar página com 
 

@@ -28,8 +28,8 @@
 
 6° dia - Segunda Página de mais informações;
     - [x] Exibir informações do país selecionado;
-    - [ ] Responsividade da página de mais informações;
+    - [x] Responsividade da página de mais informações;
 
 Extra: 
     - [ ] Exibir mensagem de erro caso a escrita no filtro input seja errada e não exiba nenhum país;
-    - [ ] Scroll infinito para otimizar a página;
+    - [ ] Carregar Conteúdo sob demanda para otimizar a página;

@@ -1,0 +1,48 @@
+@media screen and (max-width: 430px) {
+    #imgDetail {
+        height: 280px;
+    }
+}
+
+@media screen and (max-width: 690px) {
+    main {
+        padding: 3rem 1.5rem;
+    }
+
+    #imgDetail {
+        width: 100%;
+    }
+
+    .moreDetails {
+        width: 100%;
+    }
+
+    hr {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1090px) {
+    .info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .div__details {
+        flex-direction: column;
+    }
+
+    .div__details2 {
+        margin-top: 2rem;
+    }
+
+    .div__border-countries {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .border-countries__details {
+        margin-bottom: 1.5rem;
+    }
+}

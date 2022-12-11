@@ -22,8 +22,13 @@
     - [x] Responsividade da página principal;
     - [x] Fazer a página de Mais Informações; 
     - [x] Darkmode da página de Mais Informações; 
+
 5° dia - Segunda Página de mais informações;
     - [x] Alterar página de acordo com o país clicado;
+
+6° dia - Segunda Página de mais informações;
+    - [x] Exibir informações do país selecionado;
+    - [ ] Responsividade da página de mais informações;
 
 Extra: 
     - [ ] Exibir mensagem de erro caso a escrita no filtro input seja errada e não exiba nenhum país;

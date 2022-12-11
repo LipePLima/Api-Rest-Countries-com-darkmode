@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
-    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/mediaQuery/mediaQGlobal.css">
@@ -30,26 +30,46 @@
     </header>
     <main class="main__moreDetails">
         <div class="back">
-            <button class="btnBack"><a href="../../index.html"><span class="material-symbols-outlined seta">arrow_back</span>Voltar</a></button>
+            <button class="btnBack" id="btnBack"><a href="../../index.html"><span class="material-symbols-outlined seta">arrow_back</span>Voltar</a></button>
         </div>
         <div class="info">
             <div class="img">
                 <img src="" id="imgDetail">
             </div>
             <div class="moreDetails">
-                <h1 class="moreDetail-title">País</h1>
+                <h1 class="moreDetail-title" id="moreDetail-title">País</h1>
                 <div class="div__details">
                     <div class="div__details1">
-                        <p class="details"><b>Nome Nativo:</b></p>
-                        <p class="details"><b>População:</b></p>
-                        <p class="details"><b>Continênte:</b></p>
-                        <p class="details"><b>Região:</b></p>
-                        <p class="details"><b>Capital:</b></p>
+                        <p class="details">
+                            <b>Nome Nativo:</b>
+                            <span class="information"></span>
+                        </p>
+                        <p class="details">
+                            <b>População:</b>
+                            <span class="information"></span>
+                        </p>
+                        <p class="details">
+                            <b>Continênte:</b>
+                            <span class="information"></span>
+                        </p>
+                        <p class="details">
+                            <b>Região:</b>
+                            <span class="information"></span>
+                        </p>
+                        <p class="details">
+                            <b>Capital:</b>
+                            <span class="information"></span>
+                        </p>
                     </div>
                     <div class="div__details2">
-                        <p class="details"><b>Domínio de nível superior:</b></p>
-                        <p class="details"><b>Moeda:</b></p>
-                        <p class="details"><b>Linguas:</b></p>
+                        <p class="details">
+                            <b>Moeda:</b>
+                            <span class="information"></span>
+                        </p>
+                        <p class="details">
+                            <b>Idioma:</b>
+                            <span class="information"></span>
+                        </p>
                     </div>
                 </div>
                 <div class="div__border-countries">
@@ -61,7 +81,6 @@
         </div>
     </main>
     <script src="../js/moreDetails/moreDetails.js"></script>
-    <script src="../js/selectBtn.js"></script>
     <script src="../js/moreDetails/mdDarkmode.js"></script>
 </body>
 </html>

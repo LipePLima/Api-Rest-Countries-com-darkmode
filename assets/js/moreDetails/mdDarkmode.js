@@ -8,7 +8,7 @@ function mdDarkMode() {
         document.querySelector('.main__moreDetails'),
         document.querySelector('.btnBack'),
         document.querySelector('.info'),
-        document.querySelector('.border-Countries'),
+        document.querySelector('.border-Country'),
         document.querySelector('hr')
     ]
     mddark.addEventListener('change', e => {

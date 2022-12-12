@@ -60,8 +60,8 @@ main.dark {
     color: var(--white);
 }
 
-.border-Countries.dark {
-    background-color: var(--dark-blue);
+.border-Country.dark {
+    background-color: hsl(209, 95%, 75%);;
 }
 
 hr.dark {

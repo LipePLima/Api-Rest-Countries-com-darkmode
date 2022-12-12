@@ -9,39 +9,39 @@ Para todas as informações dos países, foi utilizada a API Rest Countries na a
 ## Etapas
 
 1° dia - Inicio do Projeto:
-    - [x] Criar layout destktop;
-    - [x] Estilizar tema darkmode;
-    - [x] Conseguir exibir a lista de continentes ao clicar no botão de filtragem;
+   - [x] Criar layout destktop;
+   - [x] Estilizar tema darkmode;
+   - [x] Conseguir exibir a lista de continentes ao clicar no botão de filtragem;
 
 2° dia - Criando funcionalidades(DARKMODE):
-    - [x] Criar funcionalidade com Javscript para o botão darkmode;
-    - [x] Conseguir alternar o tema do site entre light e dark;
+   - [x] Criar funcionalidade com Javscript para o botão darkmode;
+   - [x] Conseguir alternar o tema do site entre light e dark;
 
 3° dia - Manipulando API:
-    - [x] Manipular a API Rest Countries;
-    - [x] Estilizar div dos país;
-    - [x] Exibir país dentro de uma div com: Bandeira, nome, população, continente, capital;
-    - [x] Adicionar divs conformes a quantidade de países no mundo;
-    - [x] Darkmode funcionando em cada botão de país;
+   - [x] Manipular a API Rest Countries;
+   - [x] Estilizar div dos país;
+   - [x] Exibir país dentro de uma div com: Bandeira, nome, população, continente, capital;
+   - [x] Adicionar divs conformes a quantidade de países no mundo;
+   - [x] Darkmode funcionando em cada botão de país;
     
 4° dia - Filtrando países:
-    - [x] Filtro de pesquisa de países funcional;
-    - [x] Filtro de pesquisa de continentes funcional;
-    - [x] Responsividade da página principal;
-    - [x] Fazer a página de Mais Informações; 
-    - [x] Darkmode da página de Mais Informações; 
+   - [x] Filtro de pesquisa de países funcional;
+   - [x] Filtro de pesquisa de continentes funcional;
+   - [x] Responsividade da página principal;
+   - [x] Fazer a página de Mais Informações; 
+   - [x] Darkmode da página de Mais Informações; 
 
 5° dia - Segunda Página de mais informações;
-    - [x] Alterar página de acordo com o país clicado;
+   - [x] Alterar página de acordo com o país clicado;
 
 6° dia - Segunda Página de mais informações;
-    - [x] Exibir informações do país selecionado;
-    - [x] Responsividade da página de mais informações;
-    - [x] Fazer README detalhado;
+   - [x] Exibir informações do país selecionado;
+   - [x] Responsividade da página de mais informações;
+   - [x] Fazer README detalhado;
 
 Extra: 
-    - [ ] Exibir mensagem de erro caso a escrita no filtro input seja errada e não exiba nenhum país;
-    - [ ] Carregar Conteúdo sob demanda para otimizar a página;
+   - [ ] Exibir mensagem de erro caso a escrita no filtro input seja errada e não exiba nenhum país;
+   - [ ] Carregar Conteúdo sob demanda para otimizar a página;
 
 ## Tecnologias
 
@@ -55,12 +55,15 @@ Extra:
 
 <h3> :camera: Página inicial</h3>
 
+![Página principal](https://user-images.githubusercontent.com/102830741/206950122-9d103018-f61d-4077-8c1b-68c7fd87a6db.png)
 
 <h3> :camera: Página Mais Informações</h3>
 
+![Página Mais Detalhes Light Mode](https://user-images.githubusercontent.com/102830741/206950236-38a1a1b5-cf9f-4c34-b5af-a1c138719fc0.png)
 
 <h3> :camera: Página Mais Informações com Darkmode</h3>
 
+![Página Mais Detalhes Dark Mode](https://user-images.githubusercontent.com/102830741/206950289-1c915297-70fd-482e-a5f4-de3faedef0c7.png)
 
 ## Depoimento
 

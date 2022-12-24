@@ -1,13 +1,11 @@
 // Dark Mode
 function darkMode() {
-    const mydarkmode  = JSON.parse(localStorage.getItem('darkmode'));
-    const dataStorage = mydarkmode.target;
-    const icon        = document.querySelector('#icon-dark');
-    const label       = document.querySelector('#label');
-    const dark        = document.querySelector('#btn');
-    const div         = document.querySelectorAll('.country-div')
-    const data        = document.querySelectorAll('.data');
-    const list        = [
+    const icon  = document.querySelector('#icon-dark');
+    const label = document.querySelector('#label');
+    const dark  = document.querySelector('#btn');
+    const div   = document.querySelectorAll('.country-div')
+    const data  = document.querySelectorAll('.data');
+    const list  = [
         document.querySelector('header'), 
         document.querySelector('.title'), 
         document.querySelector('.dkMode'), 
@@ -18,20 +16,6 @@ function darkMode() {
         document.querySelector('.region-list')
     ]
 
-    if (dataStorage == 'check') {
-        icon.textContent  = 'dark_mode'
-        label.textContent = 'Dark Mode';
-        list.forEach( element => element.classList.add('dark'));
-        div.forEach( e => e.classList.add('dark'));
-        data.forEach( e => e.classList.add('dark'));
-    } else {
-        icon.textContent  = 'light_mode';
-        label.textContent = 'Light Mode';
-        list.forEach( element => element.classList.remove('dark'));
-        div.forEach( e => e.classList.remove('dark'));
-        data.forEach( e => e.classList.remove('dark'));
-    }
-    
     dark.addEventListener('change', e => {
         if (e.target.checked) {
             icon.textContent  = 'dark_mode'
@@ -52,5 +36,21 @@ function darkMode() {
         }
 
         localStorage.setItem('darkmode', JSON.stringify(objLocal))
+        
+        const mydarkmode  = JSON.parse(localStorage.getItem('darkmode'));
+
+        if (mydarkmode.target == 'check') {
+            icon.textContent  = 'dark_mode'
+            label.textContent = 'Dark Mode';
+            list.forEach( element => element.classList.add('dark'));
+            div.forEach( e => e.classList.add('dark'));
+            data.forEach( e => e.classList.add('dark'));
+        } else {
+            icon.textContent  = 'light_mode';
+            label.textContent = 'Light Mode';
+            list.forEach( element => element.classList.remove('dark'));
+            div.forEach( e => e.classList.remove('dark'));
+            data.forEach( e => e.classList.remove('dark'));
+        }
     })
 }

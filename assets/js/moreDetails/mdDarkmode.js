@@ -1,8 +1,5 @@
 // Dark Mode
 function mdDarkMode() {
-    const mydarkmode  = JSON.parse(localStorage.getItem('darkmode'));
-    const dataStorage = mydarkmode.target;
-    console.log(mydarkmode)
     const mdIcon      = document.querySelector('#mdIcon-dark');
     const mdLabel     = document.querySelector('#mdLabel');
     const mddark      = document.querySelector('#btn-dkMode__moreDetails');
@@ -17,18 +14,6 @@ function mdDarkMode() {
         document.querySelector('.div__border-countries'),
         document.querySelector('hr'),
     ]
-    
-    if (dataStorage == 'check') {
-        mdIcon.textContent  = 'dark_mode';
-        mdLabel.textContent = 'Dark Mode';
-        mdlist.forEach( element => element.classList.add('dark'));
-        borderC.forEach( e => e.classList.add('dark'))
-    } else {
-        mdIcon.textContent  = 'light_mode';
-        mdLabel.textContent = 'Light Mode';
-        mdlist.forEach( element => element.classList.remove('dark'));
-        borderC.forEach( e => e.classList.remove('dark'))
-    }
 
     mddark.addEventListener('change', e => {
         if (e.target.checked) {
@@ -51,6 +36,20 @@ function mdDarkMode() {
         }
 
         localStorage.setItem('darkmode', JSON.stringify(objLocal))
+
+        const mydarkmode  = JSON.parse(localStorage.getItem('darkmode'));
+    
+        if (mydarkmode.target == 'check') {
+            mdIcon.textContent  = 'dark_mode';
+            mdLabel.textContent = 'Dark Mode';
+            mdlist.forEach( element => element.classList.add('dark'));
+            borderC.forEach( e => e.classList.add('dark'))
+        } else {
+            mdIcon.textContent  = 'light_mode';
+            mdLabel.textContent = 'Light Mode';
+            mdlist.forEach( element => element.classList.remove('dark'));
+            borderC.forEach( e => e.classList.remove('dark'))
+        }
     })
 }
 

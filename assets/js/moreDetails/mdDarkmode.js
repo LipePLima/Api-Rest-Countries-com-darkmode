@@ -17,40 +17,38 @@ function mdDarkMode() {
 
     mddark.addEventListener('change', e => {
         if (e.target.checked) {
-            mdIcon.textContent  = 'dark_mode'
+            var target          = 'check';                
+            mdIcon.textContent  = 'dark_mode';
             mdLabel.textContent = 'Dark Mode';
-            var target          = 'check'                
         } else {
+            target              = 'noCheck';            
             mdIcon.textContent  = 'light_mode';
             mdLabel.textContent = 'Light Mode';
-            target              = 'noCheck'            
+        }
+
+        const objLocal = {
+            'target': target
         }
 
         mdlist.forEach( element => element.classList.toggle('dark'));
-        borderC.forEach( e => {
-            console.log(e) 
-            e.classList.toggle('dark')})
-
-        const objLocal = {
-            target: target
-        }
+        borderC.forEach( e => e.classList.toggle('dark'))
 
         localStorage.setItem('darkmode', JSON.stringify(objLocal))
-
-        const mydarkmode  = JSON.parse(localStorage.getItem('darkmode'));
-    
-        if (mydarkmode.target == 'check') {
-            mdIcon.textContent  = 'dark_mode';
-            mdLabel.textContent = 'Dark Mode';
-            mdlist.forEach( element => element.classList.add('dark'));
-            borderC.forEach( e => e.classList.add('dark'))
-        } else {
-            mdIcon.textContent  = 'light_mode';
-            mdLabel.textContent = 'Light Mode';
-            mdlist.forEach( element => element.classList.remove('dark'));
-            borderC.forEach( e => e.classList.remove('dark'))
-        }
     })
+
+    const mydarkmode  = JSON.parse(localStorage.getItem('darkmode'));
+    
+    if (mydarkmode.target === 'check') {
+        mdIcon.textContent  = 'dark_mode';
+        mdLabel.textContent = 'Dark Mode';
+        mdlist.forEach( element => element.classList.add('dark'));
+        borderC.forEach( e => e.classList.add('dark'))
+    } else {
+        mdIcon.textContent  = 'light_mode';
+        mdLabel.textContent = 'Light Mode';
+        mdlist.forEach( element => element.classList.remove('dark'));
+        borderC.forEach( e => e.classList.remove('dark'))
+    }
 }
 
 mdDarkMode()

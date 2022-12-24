@@ -120,6 +120,7 @@ hr {
     background-color: #000;
     margin-top: 1.8rem;
     border: none;
+    width: 100%;
     height: 1px;
     transition: .5s;
 }

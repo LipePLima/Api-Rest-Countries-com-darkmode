@@ -5,6 +5,7 @@ function mdDarkMode() {
     const mdIcon      = document.querySelector('#mdIcon-dark');
     const mdLabel     = document.querySelector('#mdLabel');
     const mddark      = document.querySelector('#btn-dkMode__moreDetails');
+    const borderC     = document.querySelectorAll('.border-Country')
     const mdlist      = [
         document.querySelector('header'), 
         document.querySelector('.title'), 
@@ -13,18 +14,19 @@ function mdDarkMode() {
         document.querySelector('.btnBack'),
         document.querySelector('.info'),
         document.querySelector('.div__border-countries'),
-        document.querySelector('.border-Countries'),
-        document.querySelector('hr')
+        document.querySelector('hr'),
     ]
-
-    if (dataStorage == 'check') {
+    
+    if (dataStorage == 'noCheck') {
         mdIcon.textContent  = 'dark_mode';
         mdLabel.textContent = 'Dark Mode';
         mdlist.forEach( element => element.classList.add('dark'));
+        borderC.forEach( e => e.classList.add('dark'))
     } else {
         mdIcon.textContent  = 'light_mode';
         mdLabel.textContent = 'Light Mode';
         mdlist.forEach( element => element.classList.remove('dark'));
+        borderC.forEach( e => e.classList.remove('dark'))
     }
 
     mddark.addEventListener('change', e => {
@@ -39,6 +41,9 @@ function mdDarkMode() {
         }
 
         mdlist.forEach( element => element.classList.toggle('dark'));
+        borderC.forEach( e => {
+            console.log(e) 
+            e.classList.toggle('dark')})
 
         const objLocal = {
             'target': target

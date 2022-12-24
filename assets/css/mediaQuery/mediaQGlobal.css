@@ -21,9 +21,3 @@
         justify-content: center;
     }
 }
-
-@media screen and (min-width: 1361px) {
-    .country-div {
-        margin: 3rem 5rem 0 0;
-    }
-}

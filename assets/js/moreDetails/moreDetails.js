@@ -37,7 +37,6 @@ function moreDetail (data) {
             borderCountry.innerHTML += `<div class="border-Country"><p id="border-Country__name"></p></div>`
 
             const element = data[myBtn.id].borders[i]
-
             data.forEach( e => {
                 if (e.cca3 == element) {
                     const borderCountryName = document.querySelectorAll('#border-Country__name')

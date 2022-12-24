@@ -99,6 +99,7 @@ img {
 .border-Countries {
     display: flex;
     flex-wrap: wrap;
+    border-radius: 10px;
 }
 
 .border-Country {

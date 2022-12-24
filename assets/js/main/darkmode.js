@@ -48,7 +48,7 @@ function darkMode() {
         data.forEach( e => e.classList.toggle('dark'));
 
         const objLocal = {
-            'target': target
+            target: target
         }
 
         localStorage.setItem('darkmode', JSON.stringify(objLocal))

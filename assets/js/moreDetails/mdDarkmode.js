@@ -2,6 +2,7 @@
 function mdDarkMode() {
     const mydarkmode  = JSON.parse(localStorage.getItem('darkmode'));
     const dataStorage = mydarkmode.target;
+    console.log(mydarkmode)
     const mdIcon      = document.querySelector('#mdIcon-dark');
     const mdLabel     = document.querySelector('#mdLabel');
     const mddark      = document.querySelector('#btn-dkMode__moreDetails');
@@ -17,7 +18,7 @@ function mdDarkMode() {
         document.querySelector('hr'),
     ]
     
-    if (dataStorage == 'noCheck') {
+    if (dataStorage == 'check') {
         mdIcon.textContent  = 'dark_mode';
         mdLabel.textContent = 'Dark Mode';
         mdlist.forEach( element => element.classList.add('dark'));
@@ -46,7 +47,7 @@ function mdDarkMode() {
             e.classList.toggle('dark')})
 
         const objLocal = {
-            'target': target
+            target: target
         }
 
         localStorage.setItem('darkmode', JSON.stringify(objLocal))

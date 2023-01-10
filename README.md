@@ -55,7 +55,7 @@ Extra:
 
 <h3> :camera: Página inicial</h3>
 
-![Página principal](https://user-images.githubusercontent.com/102830741/206950122-9d103018-f61d-4077-8c1b-68c7fd87a6db.png)
+![Página principal](https://user-images.githubusercontent.com/102830741/206950122-9d103018-f61d-4077-8c1b-68c7fd87a6db.png#vitrinedev)
 
 <h3> :camera: Página Mais Informações</h3>
 
